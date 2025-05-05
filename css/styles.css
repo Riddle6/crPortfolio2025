@@ -17,13 +17,19 @@ html {
     box-sizing: inherit;
 }
 
+html, body {
+    height: 100%;
+}
+
 body {
     background-color: #f6f6f6;
+    margin: 0;
 }
 /* Links */
 a {
     color: #3c8453;
 }
+
 a:hover {
     color: #bcaa96;
     text-decoration: none;
@@ -43,20 +49,57 @@ footer a:hover {
 .home {
     background: url(../images/bg-home-office-studio.jpg) no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
 }
 
 .home .content-wrapper {
-    background: rgb(255, 255, 255 / 0.9)
+    flex: 1 0 auto;
+}
+
+.content-bg {
+    background: rgb(255, 255, 255 / 0.9);
+    padding: 30px;
 }
 
 /* RESUME
 -------------------*/
+.resume header::before {
+    background: url(../images/bg-home-office-studio.jpg) center no-repeat;
+    background-size: cover;
+    content: "";
+    display: block;
+    height: 375px;
+}
 
+.resume-section {
+    margin-bottom: 50px;
+}
+
+.resume-section h2 {
+    border-bottom: 2px dashed #d3d4d6;
+}
+
+.download-link {
+    position: fixed;
+    top: 5px;
+    left: 5px;
+}
 /* Profile
 -------------------*/
 
 /* Projects
 -------------------*/
+.project-item img {
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+}
+
+.project-item {
+    display: flow-root;
+    margin: 30px 0;
+}
 
 /* Education
 -------------------*/
@@ -67,6 +110,29 @@ footer a:hover {
 footer {
     background: #222;
     color: #d3d4d6;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+footer a {
+    color: #bcaa96;
+}
+
+footer a:hover {
+    color: #3c8453;
+}
+
+.btn {
+    background: #3c8453;
+    color: #f6f6f6;
+    text-decoration: none;
+}
+
+.content-wrapper {
+    margin: 0 auto;
+    padding: 30px;
+    max-width: 900px;
 }
 
 .socials {
@@ -76,8 +142,13 @@ footer {
 
 .socials li {
     display: inline-block;
+    margin-left: 10px;
 }
 
 .socials img {
     width: 32px;
+}
+
+.socials img:hover {
+    opacity: 0.5;
 }
