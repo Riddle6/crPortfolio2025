@@ -11,9 +11,13 @@ Off-white       #f6f6f6
 /* GLOBAL STYLES 
 
 "Open Sans"
--------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
+-------------------*/
+/*@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');*/
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
 
 html {
     box-sizing: border-box;
@@ -30,13 +34,13 @@ html, body {
 body {
     background-color: #f6f6f6;
     margin: 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Work Sans", sans-serif;
     font-size: 1.5rem;
     line-height: 1.4;
 }
 
 h1, h2, h3 {
-    font-family: "Caveat", sans-serif;
+    font-family: "Roboto Slab", sans-serif;
     font-weight: 400;
     margin: 0;
 }
@@ -55,16 +59,18 @@ h3 {
 }
 /* Links */
 a {
-    color: #3c8453;
+    color: #5074ab;
 }
 
 a:hover {
-    color: #bcaa96;
+    color: #bef2fb;
     text-decoration: none;
+    background: #5e6d71;
+    border-radius: 4px;
 }
 
 .btn {
-    background: #3c8453;
+    background: #5e6d71;
     color: #f6f6f6;
     text-decoration: none;
     text-transform: uppercase;
@@ -94,7 +100,7 @@ footer a:hover {
 /* HOME
 -------------------*/
 .home {
-    background: url(../images/bg-home-office-studio.jpg) no-repeat;
+    background: url(../images/Web-Design.jpg) no-repeat;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -105,7 +111,7 @@ footer a:hover {
 }
 
 .content-bg {
-    background-color: rgb(255 255 255 / 0.9);
+    background-color: rgb(230 255 255 / 0.9);
     padding: 30px;
 }
 
@@ -122,11 +128,11 @@ footer a:hover {
 /* RESUME
 -------------------*/
 .resume header::before {
-    background: url(../images/bg-home-office-studio.jpg) center no-repeat;
+    background: url(../images/Web-Design.jpg) center no-repeat;
     background-size: cover;
     content: "";
     display: block;
-    height: 375px;
+    height: 425px;
 }
 
 .resume-section {
